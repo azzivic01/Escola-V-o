@@ -1,0 +1,6 @@
+{
+  "name": "Escola Vão",
+  "description": "Curso online em formato de trilha prática para adultos que querem aprender algo novo sem pressa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

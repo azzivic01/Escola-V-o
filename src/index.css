@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Sora', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+:root {
+  /* Cores */
+  --tema-color-bg: #F6F4FF;
+  --tema-color-surface: #FFFFFF;
+  --tema-color-border: #DAD4F5;
+  --tema-color-text: #1A1633;
+  --tema-color-text-muted: #5A5478;
+  --tema-color-accent: #5B3DF5;
+  --tema-color-accent-ink: #4A2DE0;
+  --tema-color-on-accent: #FFFFFF;
+  --tema-color-deco-1: #FFD23F;
+  --tema-color-deco-2: #FF6B57;
+  --tema-color-deco-3: #2EC4B6;
+
+  /* Fontes */
+  --tema-font-display: var(--font-serif);
+  --tema-font-body: var(--font-sans);
+  --tema-font-label: var(--font-sans);
+  --tema-font-mono: var(--font-mono);
+
+  /* Forma */
+  --tema-radius: 12px;
+  --tema-radius-lg: 24px;
+  --tema-border-width: 2px;
+  --tema-shadow-hard: none;
+
+  /* Texto */
+  --tema-label-transform: none;
+  --tema-label-tracking: 0.02em;
+  --tema-display-transform: none;
+
+  /* Movimento */
+  --motion-duration-fast: 150ms;
+  --motion-duration-base: 300ms;
+  --motion-duration-slow: 700ms;
+  --motion-duration-cinematic: 1000ms;
+  --motion-easing-base: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-easing-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-stagger: 80ms;
+}
+
+body {
+  background-color: var(--tema-color-bg);
+  color: var(--tema-color-text);
+  font-family: var(--tema-font-body);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--tema-color-accent-ink);
+  outline-offset: 2px;
+}
+
+.caderno-grid {
+  background-size: 24px 24px;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--tema-color-border) 45%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--tema-color-border) 45%, transparent) 1px, transparent 1px);
+}
